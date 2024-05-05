@@ -15,4 +15,6 @@ session
 pavucontrol.ini
 kdeglobals
 htop
+pritunl
+timewax-cli
 .zcompdump
