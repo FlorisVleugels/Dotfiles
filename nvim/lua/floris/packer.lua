@@ -50,13 +50,58 @@ return require('packer').startup(function(use)
   })
 
   use {
+    'rhysd/conflict-marker.vim',
+    config = function()
+      -- Configuration for conflict-marker.vim
+
+      -- Change the highlight group for conflict markers
+      vim.cmd [[
+        highlight ConflictMarkerBegin guibg=NONE
+        highlight ConflictMarkerOurs guibg=#2e3a3c
+        highlight ConflictMarkerTheirs guibg=#2f3a57
+        highlight ConflictMarkerEnd guibg=NONE
+        highlight ConflictMarkerCommonAncestorsHunk guibg=#40384d
+      ]]
+
+      -- Map keys to navigate conflict markers
+      vim.api.nvim_set_keymap('n', '[x', '<Plug>(conflict-marker-prev-hunk)', {})
+      vim.api.nvim_set_keymap('n', ']x', '<Plug>(conflict-marker-next-hunk)', {})
+    end
+  }
+
+  use {
       'nvimdev/dashboard-nvim',
       event = 'VimEnter',
       config = function()
           require('dashboard').setup {
-              --theme = 'doom',
+              theme = 'doom',
+              config = {
+                  header = {
+                      "                                                                       ",
+                      "                                                                     ",
+                      "       ████ ██████           █████      ██                     ",
+                      "      ███████████             █████                             ",
+                      "      █████████ ███████████████████ ███   ███████████   ",
+                      "     █████████  ███    █████████████ █████ ██████████████   ",
+                      "    █████████ ██████████ █████████ █████ █████ ████ █████   ",
+                      "  ███████████ ███    ███ █████████ █████ █████ ████ █████  ",
+                      " ██████  █████████████████████ ████ █████ █████ ████ ██████ ",
+                      "                                                                       ",
+                  },
+                  center = {
+                      { icon = '  ',
+                      desc = 'Find  File                              ',
+                      icon_hl = 'Title',
+                      action = 'Telescope find_files' },
+                      { icon = '  ',
+                      desc = 'Open Personal dotfiles                  ',
+                      action = 'Telescope dotfiles path=~/.config' },
+                  },
+                  footer = {}
+              }
           }
       end,
       requires = {'nvim-tree/nvim-web-devicons'}
   }
+
 end)

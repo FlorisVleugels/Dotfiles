@@ -27,28 +27,19 @@
         "tooltip-format": "{title}"
     },
     "hyprland/workspaces": {
+        "on-scroll-up": "hyprctl dispatch workspace r-1",
+        "on-scroll-down": "hyprctl dispatch workspace r+1",
         "on-click": "activate",
-        "format": "{icon}",
+        "active-only": false,
+        "all-outputs": true,
+        "format": "{}",
         "format-icons": {
-            "default": " ",
-            "1": "1",
-            "2": "2",
-            "3": "3",
-            "4": "4",
-            "5": "5",
-            "6": "6",
-            "7": "7",
-            "8": "8",
-            "9": "9",
-            "active": "󱓻 ",
-            "urgent": "󱓻 "
+            "urgent": "",
+            "active": "",
+            "default": ""
         },
-        "persistent_workspaces": {
-            "1": [],
-            "2": [],
-            "3": [],
-            "4": [],
-            "5": []
+        "persistent-workspaces": {
+            "*": 5
         }
     },
     "memory": {
@@ -94,7 +85,7 @@
     "custom/logo": {
         "format": "   ",
         "tooltip": false,
-        "on-click": "~/.config/rofi/launchers/misc/launcher.sh &"
+        "on-click": "rofi -show drun"
     },
     "battery": {
         "format": "{capacity}% {icon}",
@@ -135,6 +126,6 @@
     "custom/power": {
         "format": "󰤆",
         "tooltip": false,
-        "on-click": "swaylock"
+        "on-click": "hyprlock"
     }
 }
