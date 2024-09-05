@@ -28,7 +28,7 @@
     padding: 6px 18px;
     margin: 6px 3px;
     border-radius: 4px;
-    background-color: #1e1e2e;
+    background-color: rgba(0, 0, 0, 1.0);
     color: #cdd6f4;
   }
   
@@ -59,7 +59,7 @@
     border-radius: 4px;
     margin: 6px 3px;
     padding: 6px 12px;
-    background-color: #1e1e2e;
+    background-color: rgba(0, 0, 0, 1.0);
     color: #181825;
   }
   
@@ -77,10 +77,12 @@
   }
   
   #memory {
-    background-color: #cdd6f4;
+    background-color: rgba(0,0,0,1.0);
+    color: #cdd6f4;
   }
   #battery {
-    background-color: #cdd6f4;
+    background-color: rgba(0,0,0,1.0);
+    color: #cdd6f4;
   }
   @keyframes blink {
     to {
@@ -109,31 +111,36 @@
   }
   
   #pulseaudio {
-    background-color: #cdd6f4;
+    background-color: rgba(0,0,0,1.0);
+    color: #cdd6f4;
   }
   
   #network {
-    background-color: #cdd6f4;
+    background-color: rgba(0,0,0,1.0);
+    color: #cdd6f4;
     padding-right: 17px;
   }
   
   #clock {
     font-family: JetBrainsMono Nerd Font;
-    background-color: #cdd6f4;
+    background-color: rgba(0,0,0,1.0);
+    color: #cdd6f4;
   }
   
   #custom-power {
-    background-color: #cdd6f4;
+    background-color: rgba(0,0,0,1.0);
+    color: #cdd6f4;
   }
   
   
   tooltip {
   border-radius: 8px;
   padding: 15px;
-  background-color: #131822;
+  background-color: rgba(0, 0, 0, 1.0);
   }
   
   tooltip label {
   padding: 5px;
-  background-color: #131822;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #cdd6f4;
   }
