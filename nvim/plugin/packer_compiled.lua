@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/floris/.cache/nvim/packer_hererocks/2.1.1720049189/share/lua/5.1/?.lua;/home/floris/.cache/nvim/packer_hererocks/2.1.1720049189/share/lua/5.1/?/init.lua;/home/floris/.cache/nvim/packer_hererocks/2.1.1720049189/lib/luarocks/rocks-5.1/?.lua;/home/floris/.cache/nvim/packer_hererocks/2.1.1720049189/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/floris/.cache/nvim/packer_hererocks/2.1.1720049189/lib/lua/5.1/?.so"
+local package_path_str = "/home/floris/.cache/nvim/packer_hererocks/2.1.1748459687/share/lua/5.1/?.lua;/home/floris/.cache/nvim/packer_hererocks/2.1.1748459687/share/lua/5.1/?/init.lua;/home/floris/.cache/nvim/packer_hererocks/2.1.1748459687/lib/luarocks/rocks-5.1/?.lua;/home/floris/.cache/nvim/packer_hererocks/2.1.1748459687/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/floris/.cache/nvim/packer_hererocks/2.1.1748459687/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -111,7 +111,7 @@ _G.packer_plugins = {
     url = "https://github.com/rhysd/conflict-marker.vim"
   },
   ["dashboard-nvim"] = {
-    config = { "\27LJ\2\n�\14\0\0\6\0\f\0\0196\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0034\4\3\0005\5\a\0>\5\1\0045\5\b\0>\5\2\4=\4\t\0034\4\0\0=\4\n\3=\3\v\2B\0\2\1K\0\1\0\vconfig\vfooter\vcenter\1\0\3\vaction&Telescope dotfiles path=~/.config\ticon\n  \tdesc-Open Personal dotfiles                  \1\0\4\ficon_hl\nTitle\vaction\25Telescope find_files\ticon\n  \tdesc-Find  File                              \vheader\1\0\3\vcenter\0\vheader\0\vfooter\0\1\v\0\0L                                                                       P                                                                     ~       ████ ██████           █████      ██                     z      ███████████             █████                             �\1      █████████ ███████████████████ ███   ███████████   �\1     █████████  ███    █████████████ █████ ██████████████   �\1    █████████ ██████████ █████████ █████ █████ ████ █████   �\1  ███████████ ███    ███ █████████ █████ █████ ████ █████  �\1 ██████  █████████████████████ ████ █████ █████ ████ ██████ L                                                                       \1\0\2\vconfig\0\ntheme\tdoom\nsetup\14dashboard\frequire\0" },
+    config = { "\27LJ\2\n�\14\0\0\6\0\f\0\0196\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0034\4\3\0005\5\a\0>\5\1\0045\5\b\0>\5\2\4=\4\t\0034\4\0\0=\4\n\3=\3\v\2B\0\2\1K\0\1\0\vconfig\vfooter\vcenter\1\0\3\vaction&Telescope dotfiles path=~/.config\tdesc-Open Personal dotfiles                  \ticon\n  \1\0\4\ficon_hl\nTitle\tdesc-Find  File                              \ticon\n  \vaction\25Telescope find_files\vheader\1\0\3\vfooter\0\vheader\0\vcenter\0\1\v\0\0L                                                                       P                                                                     ~       ████ ██████           █████      ██                     z      ███████████             █████                             �\1      █████████ ███████████████████ ███   ███████████   �\1     █████████  ███    █████████████ █████ ██████████████   �\1    █████████ ██████████ █████████ █████ █████ ████ █████   �\1  ███████████ ███    ███ █████████ █████ █████ ████ █████  �\1 ██████  █████████████████████ ████ █████ █████ ████ ██████ L                                                                       \1\0\2\vconfig\0\ntheme\tdoom\nsetup\14dashboard\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
@@ -197,14 +197,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: conflict-marker.vim
-time([[Config for conflict-marker.vim]], true)
-try_loadstring("\27LJ\2\n�\3\0\0\6\0\n\0\0216\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\3\0009\0\4\0'\2\5\0'\3\6\0'\4\a\0004\5\0\0B\0\5\0016\0\0\0009\0\3\0009\0\4\0'\2\5\0'\3\b\0'\4\t\0004\5\0\0B\0\5\1K\0\1\0&<Plug>(conflict-marker-next-hunk)\a]x&<Plug>(conflict-marker-prev-hunk)\a[x\6n\20nvim_set_keymap\bapi�\2        highlight ConflictMarkerBegin guibg=NONE\n        highlight ConflictMarkerOurs guibg=#2e3a3c\n        highlight ConflictMarkerTheirs guibg=#2f3a57\n        highlight ConflictMarkerEnd guibg=NONE\n        highlight ConflictMarkerCommonAncestorsHunk guibg=#40384d\n      \bcmd\bvim\0", "config", "conflict-marker.vim")
-time([[Config for conflict-marker.vim]], false)
 -- Config for: oil.nvim
 time([[Config for oil.nvim]], true)
 try_loadstring("\27LJ\2\n1\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\boil\frequire\0", "config", "oil.nvim")
 time([[Config for oil.nvim]], false)
+-- Config for: conflict-marker.vim
+time([[Config for conflict-marker.vim]], true)
+try_loadstring("\27LJ\2\n�\3\0\0\6\0\n\0\0216\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\3\0009\0\4\0'\2\5\0'\3\6\0'\4\a\0004\5\0\0B\0\5\0016\0\0\0009\0\3\0009\0\4\0'\2\5\0'\3\b\0'\4\t\0004\5\0\0B\0\5\1K\0\1\0&<Plug>(conflict-marker-next-hunk)\a]x&<Plug>(conflict-marker-prev-hunk)\a[x\6n\20nvim_set_keymap\bapi�\2        highlight ConflictMarkerBegin guibg=NONE\n        highlight ConflictMarkerOurs guibg=#2e3a3c\n        highlight ConflictMarkerTheirs guibg=#2f3a57\n        highlight ConflictMarkerEnd guibg=NONE\n        highlight ConflictMarkerCommonAncestorsHunk guibg=#40384d\n      \bcmd\bvim\0", "config", "conflict-marker.vim")
+time([[Config for conflict-marker.vim]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Event lazy-loads

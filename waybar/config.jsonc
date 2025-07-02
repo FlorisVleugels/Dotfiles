@@ -39,7 +39,6 @@
             "default": ""
         },
         "persistent-workspaces": {
-            "*": 4
         }
     },
     "memory": {

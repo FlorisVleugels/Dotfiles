@@ -22,30 +22,27 @@
   }
   
   #workspaces button {
-    all: initial; /* Remove GTK theme values (waybar #1351) */
     min-width: 0; /* Fix weird spacing in materia (waybar #450) */
-    box-shadow: inset 0 -3px transparent; /* Use box-shadow instead of border so the text isn't offset */
-    padding: 6px 18px;
-    margin: 6px 3px;
+    padding: 6px 14px;
     border-radius: 4px;
-    background-color: rgba(0, 0, 0, 1.0);
     color: #cdd6f4;
+  }
+  @keyframes blink {
+    to {
+      color: #181825;
+    }
   }
   
   #workspaces button.active {
-    color: #1e1e2e;
-    background-color: #cdd6f4;
-  }
-  
-  #workspaces button:hover {
-   box-shadow: inherit;
-   text-shadow: inherit;
-   color: #1e1e2e;
-   background-color: #cdd6f4;
+    color: #66b2b2;
   }
   
   #workspaces button.urgent {
-    background-color: #f38ba8;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
   }
   
   #memory,
@@ -57,36 +54,26 @@
   #clock,
   #tray {
     border-radius: 4px;
-    margin: 6px 3px;
     padding: 6px 12px;
-    background-color: rgba(0, 0, 0, 1.0);
     color: #181825;
   }
   
-  #custom-power {
-    margin-right: 6px;
-  }
-  
   #custom-logo {
-    padding-right: 7px;
-    padding-left: 7px;
-    margin-left: 5px;
+    padding-right: 2px;
+    padding-left: 6px;
     font-size: 15px;
     border-radius: 8px 0px 0px 8px;
     color: #cdd6f4;
   }
   
   #memory {
-    background-color: rgba(0,0,0,1.0);
     color: #cdd6f4;
   }
   #battery {
-    background-color: rgba(0,0,0,1.0);
     color: #cdd6f4;
   }
   @keyframes blink {
     to {
-      background-color: #f38ba8;
       color: #181825;
     }
   }
@@ -105,41 +92,31 @@
     color: #a6e3a1;
   }
   
-  #backlight {
-    background-color: #fab387;
-  }
-  
   #pulseaudio {
-    background-color: rgba(0,0,0,1.0);
     color: #cdd6f4;
   }
   
   #network {
-    background-color: rgba(0,0,0,1.0);
     color: #cdd6f4;
-    padding-right: 17px;
+    padding-right: 4px;
   }
   
   #clock {
     font-family: JetBrainsMono Nerd Font;
-    background-color: rgba(0,0,0,1.0);
     color: #cdd6f4;
   }
   
   #custom-power {
-    background-color: rgba(0,0,0,1.0);
     color: #cdd6f4;
+    margin-right: 6px;
   }
-  
   
   tooltip {
   border-radius: 8px;
   padding: 15px;
-  background-color: rgba(0, 0, 0, 1.0);
   }
   
   tooltip label {
   padding: 5px;
-  background-color: rgba(0, 0, 0, 0.8);
   color: #cdd6f4;
   }
