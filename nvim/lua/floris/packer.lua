@@ -94,8 +94,8 @@ return require('packer').startup(function(use)
                       icon_hl = 'Title',
                       action = 'Telescope find_files' },
                       { icon = '  ',
-                      desc = 'Open Personal dotfiles                  ',
-                      action = 'Telescope dotfiles path=~/.config' },
+                      desc = 'Open Directory',
+                      action = 'Oil' },
                   },
                   footer = {}
               }
