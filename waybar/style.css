@@ -7,7 +7,6 @@
   }
   
   window#waybar {
-    /* background-color: #181825; */
     background-color: rgba(0, 0, 0, 0.8);
     transition-property: background-color;
     transition-duration: 0.5s;
@@ -22,7 +21,7 @@
   }
   
   #workspaces button {
-    min-width: 0; /* Fix weird spacing in materia (waybar #450) */
+    min-width: 0;
     padding: 6px 14px;
     border-radius: 4px;
     color: #cdd6f4;
@@ -35,6 +34,13 @@
   
   #workspaces button.active {
     color: #66b2b2;
+  }
+
+  button:hover {
+      box-shadow: none;
+      text-shadow: none;
+      background: none;
+      transition: none;
   }
   
   #workspaces button.urgent {
@@ -54,14 +60,13 @@
   #clock,
   #tray {
     border-radius: 4px;
-    padding: 6px 12px;
+    padding: 6px 11px;
     color: #181825;
   }
   
   #custom-logo {
     padding-right: 2px;
     padding-left: 6px;
-    font-size: 15px;
     border-radius: 8px 0px 0px 8px;
     color: #cdd6f4;
   }
