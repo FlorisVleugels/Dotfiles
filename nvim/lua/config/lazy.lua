@@ -41,6 +41,7 @@ vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
+vim.o.winborder = 'rounded'
 
 -- Vim Keymaps
 vim.keymap.set("n", "<leader>pv", "<CMD>Oil<CR>")
