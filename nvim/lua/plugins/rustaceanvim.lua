@@ -8,10 +8,15 @@ return {
         server = {
           capabilities = require('cmp_nvim_lsp').default_capabilities(),
           settings = {
-            ['rust-analyzer'] = {
-              cargo = { allFeatures = true },
-              checkOnSave = true,
-            },
+              ['rust-analyzer'] = {
+                  cargo = { allFeatures = true },
+                  checkOnSave = true,
+                  diagnostics = {
+                      enable = true,
+                      disabled = { "unresolved-proc-macro", "macro-error" },
+                      --disabled = {},
+                  },
+              },
           },
         },
       }

@@ -20,6 +20,7 @@ vim.opt.rtp:prepend(lazypath)
 -- This is also a good place to setup other settings (vim.opt)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
+vim.g.rustfmt_autosave = 1
 
 -- Vim Opts
 vim.opt.nu = true
